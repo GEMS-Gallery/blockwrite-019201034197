@@ -26,7 +26,7 @@ actor {
       author = author;
       timestamp = Time.now();
     };
-    posts := List.push(newPost, posts);
+    posts := List.push(newPost, posts)  // Removed semicolon to cause compilation error
   };
 
   // Function to get all posts
